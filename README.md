@@ -69,6 +69,6 @@ tabela buy_order. As demais tabelas se encontram na terceira forma normal.
 ## 7. Consulta proposta
 "Apresentar os 2 vendedores que possuem maiores avaliações em seus produtos
 anunciados. Apresentar nome do vendedor, nome do produto anunciado e seu respectivo
-score".
+score":
 
 ![result.png](img/result.png)
