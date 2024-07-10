@@ -16,6 +16,7 @@ Os usuários do tipo avaliador, são especialistas em algum tipo de antiguidade 
 moedas, esculturas, etc) e garantem ao cliente final a certeza da originalidade do produto.
 
 **Lógica de Modelagem**
+
 Todos os usuários têm usuário e senha referentes a sua conta na plataforma, além disso
 seu cadastro possui nome e documento. Os usuários do tipo vendedor e avaliador,
 precisam cadastrar uma conta bancária para receber seus respectivos pagamentos, já os
