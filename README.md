@@ -1,4 +1,4 @@
-# Universo de discurso 
+# 🐶 Universo de discurso 
 ### Objetivo do sistema
 O projeto visa atuar no comércio de itens históricos e antiguidades. Nossa plataforma
 conecta compradores e vendedores ao redor do mundo, oferecendo durante o processo de
