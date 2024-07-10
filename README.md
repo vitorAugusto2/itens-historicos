@@ -1,11 +1,11 @@
 # Universo de discurso 
-## 1. Objetivo do sistema
+### Objetivo do sistema
 O projeto visa atuar no comércio de itens históricos e antiguidades. Nossa plataforma
 conecta compradores e vendedores ao redor do mundo, oferecendo durante o processo de
 compra o serviço de avaliação do produto realizado por um especialista, assim o comprador
 tem a certeza que está adquirindo um item original.
 
-## 2. Principais funcionalidades e lógica de modelagem
+### Principais funcionalidades e lógica de modelagem
 O usuário pode ser cadastrado de três formas: como comprador, vendedor e/ou
 especialista. Todos apresentam atributos comuns, como nome, email e documento.
 A cada compra efetuada, um novo registro é inserido na tabela buy_order com a descrição
@@ -15,7 +15,7 @@ anúncio com o valor do produto e suas especificações.
 Os usuários do tipo avaliador, são especialistas em algum tipo de antiguidade (carros,
 moedas, esculturas, etc) e garantem ao cliente final a certeza da originalidade do produto.
 
-## 3. Lógica de Modelagem
+### Lógica de Modelagem
 Todos os usuários têm usuário e senha referentes a sua conta na plataforma, além disso
 seu cadastro possui nome e documento. Os usuários do tipo vendedor e avaliador,
 precisam cadastrar uma conta bancária para receber seus respectivos pagamentos, já os
@@ -25,7 +25,7 @@ comentário para sua experiência.
 
 ![MER.png](img/MER.png)
 
-## 4. Mapeamento para relacional
+### Mapeamento para relacional
 Descritivo de alterações realizadas por entidade:
 
 * **seller** - mantivemos a entidade seller, onde relacionamos os dados do endereço do
@@ -57,16 +57,16 @@ cálculos de faturamento.
 
 * **seller_rating** - nova tabela que tem o papel de registrar as avaliações dos vendedores.
 
-## 5. Diagrama de entidades
+### Diagrama de entidades
 ![diagram_entity.png](img/diagram_entity.png)
 
-## 6. Justificativas de não normalização
+### Justificativas de não normalização
 Na tabela seller, escolhemos manter um campo com a média da avaliação do vendedor
 para facilitar análises e disponibilizar na plataforma essa visão aos clientes. Além disso,
 também preferimos calcular o valor total da compra registrado na coluna order_price da
 tabela buy_order. As demais tabelas se encontram na terceira forma normal.
 
-## 7. Consulta proposta
+### Consulta proposta
 "Apresentar os 2 vendedores que possuem maiores avaliações em seus produtos
 anunciados. Apresentar nome do vendedor, nome do produto anunciado e seu respectivo
 score":
