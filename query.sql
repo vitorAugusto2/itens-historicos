@@ -1,14 +1,14 @@
-select
-	u.user_name as vendedor,
+SELECT
+	u.user_name AS vendedor,
 	p.product_name,
-	seller_rating.seller_note as score
-from seller_rating
-join seller 
-	on seller.seller_id = seller_rating.seller_id 
-join users u 
-	on u.user_document = seller.user_document 
-join product p 
-	on p.seller_id = seller.seller_id 
-order by 
-	seller_note desc
-limit 2
+	seller_rating.seller_note AS score
+FROM seller_rating
+JOIN seller 
+	ON seller.seller_id = seller_rating.seller_id 
+JOIN users u 
+	ON u.user_document = seller.user_document 
+JOIN product p 
+	ON p.seller_id = seller.seller_id 
+ORDER BY
+	seller_note DESC
+LIMIT 2
